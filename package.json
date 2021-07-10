@@ -8,6 +8,11 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "jest",
+    "mock",
+    "typescript"
+  ],
   "lint-staged": {
     "*.ts": [
       "eslint"
