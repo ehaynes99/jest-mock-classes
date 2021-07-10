@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "allowJs": true,
     "module": "commonjs",
     "target": "es2019",
     "lib": ["es2020"],
@@ -8,9 +7,6 @@
     "outDir": "dist",
     "declaration": true,
     "moduleResolution": "node",
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "incremental": true,
     "strict": true
