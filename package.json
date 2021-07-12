@@ -1,10 +1,14 @@
 {
   "name": "jest-mock-classes",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Eric Haynes",
   "license": "ISC",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehaynes99/jest-mock-classes"
+  },
   "files": [
     "dist"
   ],
