@@ -22,7 +22,6 @@ export const createMockInstance = <T>(
   }
   const MockClass = mocker.generateFromMetadata(metadata);
   const instance = new MockClass() as any;
-  instance.constructor = classToMock;
   if (values) {
     type Prop = keyof T;
     const props = Object.keys(values) as Prop[];

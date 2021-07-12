@@ -1,6 +1,6 @@
 {
   "name": "jest-mock-classes",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Eric Haynes",
   "license": "ISC",
   "main": "dist/index.js",
