@@ -46,15 +46,23 @@ it('allows mocking', async () => {
 });
 ```
 
-The methods of the mocked instance (whether an implementation was provided or not) are `jest.fn` and can be interacted with like any other mock function. 
+The returned instance is a `jest.Mocked<Class>`. This type is fully compatible with the mocked class, but also exposes the `jest.fn` behavior of all methods of the mocked instance (whether an implementation was provided or not): 
 
 ```typescript
+let mockInstance: jest.Mocked<ExampleClass>;
+
+beforeEach(() => {
+  mockInstance = createMockInstance(ExampleClass);
+});
+
 it('uses jest mocks', async () => {
-  const instance = createMockInstance(ExampleClass);
+  mockInstance.doSomething.mockImplementation(() => 'hello!');
 
-  instance.doSomething.mockImplementation(() => 'hello!');
+  expect(mockInstance).toBeInstanceOf(ExampleClass);
 
-  expect(instance.doSomething()).toEqual('hello!');
+  const asRealInstance: ExampleClass = mockInstance;
+
+  expect(asRealInstance.doSomething()).toEqual('hello!');
 });
 ```
 

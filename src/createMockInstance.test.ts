@@ -95,6 +95,11 @@ describe('createMockInstance', () => {
     // @ts-expect-error mocks must match class definition
     createMockInstance(TestClass, { what: 'ever' });
   });
+
+  it('passes instanceOf checks', async () => {
+    const instance = createMockInstance(TestClass);
+    expect(instance).toBeInstanceOf(TestClass);
+  });
 });
 
 class SuperClass {
