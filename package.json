@@ -1,6 +1,6 @@
 {
   "name": "jest-mock-classes",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Eric Haynes",
   "license": "ISC",
   "main": "dist/index.js",
@@ -32,7 +32,7 @@
     "prepublishOnly": "npm run test && npm run build"
   },
   "peerDependencies": {
-    "jest": "^24.0.0"
+    "jest": "^24.0.0 || ^25.0.0 || ^26.0.0 || ^27.0.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
