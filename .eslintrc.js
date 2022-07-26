@@ -20,9 +20,10 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
-      { args: 'after-used', varsIgnorePattern: '^_' },
+      {
+        args: 'after-used',
+        varsIgnorePattern: '^_',
+      },
     ],
-    semi: ['error', 'always'],
-    quotes: ['error', 'single'],
   },
-};
+}
